@@ -8,4 +8,16 @@ public class ItemPedido {
         this.preco = preco;
         this.quantidade = quantidade;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
 }
