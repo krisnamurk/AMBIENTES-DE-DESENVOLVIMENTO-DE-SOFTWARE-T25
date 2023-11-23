@@ -6,5 +6,13 @@ public class Cliente {
         this.nome = nome;
         this.endereco = endereco;
     }
+
+    public void fazerPedido(Restaurante restaurante, List<ItemPedido> itens) {
+        Pedido novoPedido = restaurante.fazerPedido(this, itens);
+        System.out.println("Novo pedido feito pelo cliente: #" + novoPedido.getNumeroPedido());
+    }
+
+    public String getNome() {
+        return nome;
+    }
 }
-// aguardado alguns dados para iniciar
