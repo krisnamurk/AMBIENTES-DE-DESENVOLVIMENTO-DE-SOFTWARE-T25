@@ -15,5 +15,11 @@ public class Pedido {
         itens.add(item);
         System.out.println("Item adicionado ao pedido #" + numeroPedido);
     }
-    
+    public double CalcularTotal(){
+        double total = 0;
+        for (ItemPedido item : itens){
+            total += item.getPreco() * item.getQuantidade();
+        }
+        return total;
+    }
 }
