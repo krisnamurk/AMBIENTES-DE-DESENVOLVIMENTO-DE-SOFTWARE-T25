@@ -11,15 +11,19 @@ public class Pedido {
         this.cliente = cliente;
         this.itens = new ArrayList<>();
     }
-    public void AdicionarItem(ItemPedido item){
+    public void adicionarItem(ItemPedido item){
         itens.add(item);
         System.out.println("Item adicionado ao pedido #" + numeroPedido);
     }
-    public double CalcularTotal(){
+    public double calcularTotal(){
         double total = 0;
         for (ItemPedido item : itens){
             total += item.getPreco() * item.getQuantidade();
         }
         return total;
+    }
+
+    public int getNumeroPedido() {
+        return numeroPedido;
     }
 }
