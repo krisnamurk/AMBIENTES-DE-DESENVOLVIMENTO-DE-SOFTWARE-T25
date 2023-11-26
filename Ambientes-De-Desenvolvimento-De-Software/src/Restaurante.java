@@ -6,7 +6,9 @@ public class Restaurante {
      utilizarmos um método referente a outra classe, que será da classe Pedido, o método de adicionar item/pedido) neste restaurante e outro para listar os pedidos do Restaurante*/
 
     private List<Pedido> pedidos;
-    public Restaurante(){
+    private String nome;
+    public Restaurante(String nome){
+        this.nome = nome;
         this.pedidos = new ArrayList<>();
     }
 
@@ -21,6 +23,7 @@ public class Restaurante {
     }
 
     public void listarPedidos(){
+        System.out.println("\n\n\nPedidos do " + nome);
         for (Pedido pedido : pedidos){
             System.out.println("Pedido #" + pedido.getNumeroPedido() + " - Total: R$ " + pedido.calcularTotal());
         }
@@ -34,4 +37,7 @@ public class Restaurante {
         return total;
     }
 
+    public String getNome() {
+        return nome;
+    }
 }

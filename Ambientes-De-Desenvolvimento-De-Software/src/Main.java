@@ -7,7 +7,7 @@ public class Main {
         de pedidos de um Restaurante*/
 
         Cliente artur = new Cliente ("Artur", "Rua Mário Mamede, 555");
-        Restaurante restauranteADS = new Restaurante();
+        Restaurante restauranteADS = new Restaurante("restauranteADS");
         ItemPedido pizza = new ItemPedido("Pizza", 15.0, 1);
         ItemPedido refrigerante = new ItemPedido("Refrigerante", 6.0, 2);
 
