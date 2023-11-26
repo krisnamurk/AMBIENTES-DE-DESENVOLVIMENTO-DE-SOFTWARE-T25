@@ -22,7 +22,7 @@ public class Restaurante {
 
     public void listarPedidos(){
         for (Pedido pedido : pedidos){
-            System.out.println("Pedido #" + pedido.getNumeroPedido() + " - Total: R$" + pedido.calcularTotal());
+            System.out.println("Pedido #" + pedido.getNumeroPedido() + " - Total: R$ " + pedido.calcularTotal());
         }
     }
 
