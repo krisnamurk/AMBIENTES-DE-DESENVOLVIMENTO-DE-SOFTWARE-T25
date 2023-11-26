@@ -23,7 +23,7 @@ public class Restaurante {
     }
 
     public void listarPedidos(){
-        System.out.println("\n\n\nPedidos do " + nome);
+        System.out.println("\n\nPedidos do " + nome);
         for (Pedido pedido : pedidos){
             System.out.println("Pedido #" + pedido.getNumeroPedido() + " - Total: R$ " + pedido.calcularTotal());
         }
@@ -40,4 +40,6 @@ public class Restaurante {
     public String getNome() {
         return nome;
     }
+
+
 }

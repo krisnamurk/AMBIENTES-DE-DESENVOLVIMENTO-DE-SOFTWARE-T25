@@ -15,6 +15,9 @@ public class Cliente {
 
         double totalPedidos = restaurante.calcularTotalPedidos();
         System.out.println("Valor total, em R$, de pedidos do cliente ' " + nome + " ' no restaurante ' " + restaurante.getNome() + " ': R$ " + totalPedidos);
+
+        System.out.print("\n");
+        novoPedido.mostrarItens();
     }
 
     public String getNome() {

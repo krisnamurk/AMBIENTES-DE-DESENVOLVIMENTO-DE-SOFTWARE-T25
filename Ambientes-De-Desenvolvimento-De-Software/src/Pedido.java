@@ -26,4 +26,11 @@ public class Pedido {
     public int getNumeroPedido() {
         return numeroPedido;
     }
+
+    public void mostrarItens(){
+        System.out.println("Itens do Pedido #" + numeroPedido + ":");
+        for (ItemPedido item : itens){
+            System.out.println("- " + item.getNome() + " - Preço: R$ " + item.getPreco() + " - Quantidade: " + item.getQuantidade());
+        }
+    }
 }
