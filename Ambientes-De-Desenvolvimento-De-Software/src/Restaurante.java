@@ -37,6 +37,12 @@ public class Restaurante {
         return total;
     }
 
+    public void imprimirMenu() {
+        System.out.println("Menu do Restaurante:");
+        System.out.println("- Pizza - Preço: R$15.00");
+        System.out.println("- Refrigerante - Preço: R$6.00");
+    }
+
     public String getNome() {
         return nome;
     }
