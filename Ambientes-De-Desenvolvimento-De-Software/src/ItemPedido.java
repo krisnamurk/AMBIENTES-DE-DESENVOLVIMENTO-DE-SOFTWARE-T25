@@ -29,7 +29,7 @@ public class ItemPedido {
         return quantidade;
     }
 
-    //Krisnamurk
+    // Krisnamurk
     public double calcularSubtotal() {
         return preco * quantidade;
     }
