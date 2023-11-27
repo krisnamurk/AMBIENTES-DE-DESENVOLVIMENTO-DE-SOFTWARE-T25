@@ -1,8 +1,8 @@
-public class ItemPedido { 
+public class ItemPedido {
     // atributos da classe
-    private String nome;        // nome do item no pedido
-    private double preco;       // preço unitário do item
-    private int quantidade;     // quantidade deseja do item no pedido
+    private String nome; // nome do item no pedido
+    private double preco; // preço unitário do item
+    private int quantidade; // quantidade deseja do item no pedido
 
     // construtor
     public ItemPedido(String nome, double preco, int quantidade) {
@@ -27,5 +27,10 @@ public class ItemPedido {
     // retorna a quantidade do item no pedido
     public int getQuantidade() {
         return quantidade;
+    }
+
+    //Krisnamurk
+    public double calcularSubtotal() {
+        return preco * quantidade;
     }
 }
