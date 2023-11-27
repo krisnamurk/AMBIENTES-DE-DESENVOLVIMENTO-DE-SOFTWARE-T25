@@ -27,6 +27,7 @@ public class Pedido {
         return numeroPedido;
     }
 
+    //Artur Cavalcante
     public void mostrarItens(){
         System.out.println("Itens do Pedido #" + numeroPedido + ":");
         for (ItemPedido item : itens){
