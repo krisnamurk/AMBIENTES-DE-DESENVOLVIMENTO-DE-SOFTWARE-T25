@@ -7,7 +7,10 @@ public class Main {
         de pedidos de um Restaurante*/
 
         Cliente artur = new Cliente ("Artur", "Rua Mário Mamede, 555");
+
         Restaurante restauranteADS = new Restaurante("RestauranteADS");
+        restauranteADS.imprimirMenu();
+
         ItemPedido pizza = new ItemPedido("Pizza", 15.0, 1);
         ItemPedido refrigerante = new ItemPedido("Refrigerante", 6.0, 2);
 
@@ -16,8 +19,6 @@ public class Main {
         itensPedidoArtur.add(refrigerante);
 
         artur.fazerPedido(restauranteADS, itensPedidoArtur);
-
-
         restauranteADS.listarPedidos();
     }
 
