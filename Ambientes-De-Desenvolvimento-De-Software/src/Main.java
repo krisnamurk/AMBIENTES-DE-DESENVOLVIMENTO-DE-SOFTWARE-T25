@@ -18,8 +18,12 @@ public class Main {
         itensPedidoArtur.add(pizza);
         itensPedidoArtur.add(refrigerante);
 
-        artur.fazerPedido(restauranteADS, itensPedidoArtur);
+        Pedido pedidoArtur = restauranteADS.fazerPedido(artur, itensPedidoArtur);
         restauranteADS.listarPedidos();
+
+        artur.realizarPagamento(pedidoArtur);
+
+
     }
 
 }
