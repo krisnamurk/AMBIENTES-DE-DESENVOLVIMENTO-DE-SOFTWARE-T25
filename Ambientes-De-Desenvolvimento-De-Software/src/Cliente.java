@@ -22,7 +22,7 @@ public class Cliente {
     }
     public void realizarPagamento(Pedido pedido) {
         double total = pedido.calcularTotal();
-        System.out.println("Cliente " + nome + " realizou o pagamento do Pedido #" + pedido.getNumeroPedido() + " no valor de $" + total);
+        System.out.println("Cliente " + nome + " realizou o pagamento do Pedido #" + pedido.getNumeroPedido() + " no valor de R$" + total);
     }
 
     public String getNome() {
