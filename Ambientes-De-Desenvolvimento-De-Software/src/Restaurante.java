@@ -20,7 +20,6 @@ public class Restaurante {
             novoPedido.adicionarItem(item);
         }
         pedidos.add(novoPedido);
-        System.out.println("Novo pedido feito pelo cliente " + cliente.getNome() + " : Pedido #" + novoPedido.getNumeroPedido());
         return novoPedido;
     }
 
