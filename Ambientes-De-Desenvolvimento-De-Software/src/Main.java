@@ -23,6 +23,8 @@ public class Main {
         artur.fazerPedido(restauranteADS, itensPedidoArtur);
         restauranteADS.listarPedidos();
 
+        artur.avaliarAtendimento(8);
+
     }
 
 }
