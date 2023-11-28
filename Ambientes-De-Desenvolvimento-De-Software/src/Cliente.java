@@ -20,11 +20,9 @@ public class Cliente {
         System.out.print("\n");
         novoPedido.mostrarItens();
     }
-    public void realizarPagamento(Pedido pedido) {
-        double total = pedido.calcularTotal();
-        System.out.println("Cliente " + nome + " realizou o pagamento do Pedido #" + pedido.getNumeroPedido() + " no valor de R$" + total);
+    public void avaliarAtendimento(int nota) {
+        System.out.println("Cliente " + nome + " avaliou o atendimento com nota: " + nota);
     }
-
     public String getNome() {
         return nome;
     }
