@@ -10,7 +10,7 @@ public class Cliente {
     }
 
     public void fazerPedido(Restaurante restaurante, List<ItemPedido> itens) {
-        Pedido novoPedido = restaurante.fazerPedido(this, itens);
+        Pedido novoPedido = restaurante.fazerPedidoRestaurante(this, itens);
         System.out.println("Novo pedido feito pelo cliente " + nome + " : Pedido #" + novoPedido.getNumeroPedido());
 
         double totalPedidos = restaurante.calcularTotalPedidos();

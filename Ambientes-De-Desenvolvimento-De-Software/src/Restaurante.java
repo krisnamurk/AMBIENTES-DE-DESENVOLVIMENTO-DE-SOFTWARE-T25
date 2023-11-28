@@ -12,18 +12,20 @@ public class Restaurante {
         this.pedidos = new ArrayList<>();
     }
 
-    public Pedido fazerPedido (Cliente cliente, List<ItemPedido> itens){
+    //Utilizamos dois métodos fazerPedido, para dar a possibilidade de criar tanto pelo Cliente, como pelo Restaurante
+    public Pedido fazerPedidoRestaurante (Cliente cliente, List<ItemPedido> itens){
         int novoNumeroPedido = pedidos.size() + 1;
         Pedido novoPedido = new Pedido(novoNumeroPedido, cliente);
         for (ItemPedido item : itens){
             novoPedido.adicionarItem(item);
         }
         pedidos.add(novoPedido);
+        System.out.println("Novo pedido feito pelo cliente " + cliente.getNome() + " : Pedido #" + novoPedido.getNumeroPedido());
         return novoPedido;
     }
 
     public void listarPedidos(){
-        System.out.println("\n\nPedidos no " + nome);
+        System.out.println("\nPedidos no " + nome);
         for (Pedido pedido : pedidos){
             System.out.println("Pedido #" + pedido.getNumeroPedido() + " - Total: R$ " + pedido.calcularTotal());
         }
@@ -46,6 +48,5 @@ public class Restaurante {
     public String getNome() {
         return nome;
     }
-
 
 }

@@ -13,7 +13,7 @@ public class Pedido {
     }
     public void adicionarItem(ItemPedido item){
         itens.add(item);
-        System.out.println("\nItem adicionado ao pedido #" + numeroPedido);
+        System.out.println("Item adicionado ao pedido #" + numeroPedido);
     }
     public double calcularTotal(){
         double total = 0;

@@ -6,23 +6,23 @@ public class Main {
         /*Classe Main, onde será adicionada, posteriormente, todas as demais classes que irão se entregar em um exemplo relacionados ao sistema/gerenciamento
         de pedidos de um Restaurante*/
 
-        Cliente artur = new Cliente ("Artur", "Rua Mário Mamede, 555");
+
+        //Criação pedido Artur utilizando a primeira forma de realizar pedidos
+        Cliente artur = new Cliente ("Artur", "Rua Mário Mamede, 555, Bloco 1");
 
         Restaurante restauranteADS = new Restaurante("RestauranteADS");
         restauranteADS.imprimirMenu();
 
-        ItemPedido pizza = new ItemPedido("Pizza", 15.0, 1);
-        ItemPedido refrigerante = new ItemPedido("Refrigerante", 6.0, 2);
+        ItemPedido pizzaArtur = new ItemPedido("Pizza", 15.0, 1);
+        ItemPedido refrigeranteArtur = new ItemPedido("Refrigerante", 6.0, 2);
 
         List<ItemPedido> itensPedidoArtur = new ArrayList<>();
-        itensPedidoArtur.add(pizza);
-        itensPedidoArtur.add(refrigerante);
+        itensPedidoArtur.add(pizzaArtur);
+        itensPedidoArtur.add(refrigeranteArtur);
 
-        Pedido pedidoArtur = restauranteADS.fazerPedido(artur, itensPedidoArtur);
+        Pedido pedidoArtur = restauranteADS.fazerPedidoRestaurante(artur, itensPedidoArtur);
         restauranteADS.listarPedidos();
-
         artur.realizarPagamento(pedidoArtur);
-
 
     }
 
